@@ -1,3 +1,3 @@
 # Website_Bot
 
- Wag po palitan yung Credit Salamat!
+ Wag po palitan yung Credit! Salamat!
