@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
+  <script type="text/javascript" src="/assets/js/typewriter.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>TEST</title>
+</head>
+
+<body>
+  <div id="particles-js">
+  <div class="main">
+    <h1 id="head"></h1>
+      <textarea id="sessionData" placeholder="Paste your appstate here"></textarea><br>
+      <div class="button-container">
+        <a href="https://www.facebook.com/icotacteeee"><button id="" class="matrix-animation" >Add Session</button></a>
+        <button id="resetcon" class="matrix-animation"onclick="clearconsole()">Clear Console</button>
+      </div>
+      <h1>NOT WORKING!</h1>
+      <h4 id="credit"></h4>
+      <p id="sessionCount">Active Appstates: <span id="sessionNumber">0</span></p>
+      <p id="pingStatus">Ping: <span id="pingTime">0</span> ms</p>
+    <div class="text-reminder">
+    <div id="browser_info"></div> 
+    <script>
+    let arrBulan = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    let txt = "";
+    let text_el = document.querySelector("div#browser_info");
+    setInterval(() => {
+      var d = new Date();
+      const jam = d.getHours().toString().padStart(2, 0);
+      const menit = d.getMinutes().toString().padStart(2, 0);
+      const detik = d.getSeconds().toString().padStart(2, 0);
+      const tgl = d.getDate().toString().padStart(2, 0);
+      const bln = d.getMonth();
+      const thn = d.getFullYear();
+      const bulan = arrBulan[bln];
+      text_el.innerHTML =
+        txt +
+        "<p><b>Time</b>: " +
+        jam +
+        ":" +
+        menit +
+        ":" +
+        detik +
+        "" +
+        txt +
+        " | <b>Date</b>: " +
+        bulan +
+        "-" +
+        tgl +
+        "-" +
+        thn +
+        "</p>"
+    }, 250);
+    </script>
+    
+  </div>
+  </div>
+
+</body>
+<script src="./assets/js/node.js"></script>
+<script src="./assets/js/particles.js"></script>
+
+</html>

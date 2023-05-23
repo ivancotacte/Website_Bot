@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#sessionData {
+  width: 70%;
+  height: 300px;
+  resize: none;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid #0f0;
+  background-color: transparent;
+  color: #0f0;
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+
+#sessionCount,
+#pingStatus {
+  font-size: 14px;
+  color: #0f0;
+  margin-top: 1rem;
+}
+
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #111111;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+body{
+  font-family: "Courier New", monospace;
+  background-color: #111111;
+  color: #0f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  color: #00FF00;
+  background-color: transparent;
+  border: 2px solid #00FF00;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-container button:hover {
+  background-color: #00FF00;
+  color: black;
+}
+
+.button-container button.matrix-animation {
+  animation: matrixAnim 3s infinite;
+}
+
+@keyframes matrixAnim {
+  0% {
+    background-color: transparent;
+    color: #00FF00;
+  }
+  50% {
+    background-color: #00FF00;
+    color: black;
+  }
+  100% {
+    background-color: transparent;
+    color: #00FF00;
+  }
+}
