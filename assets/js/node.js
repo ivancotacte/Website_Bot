@@ -45,9 +45,12 @@ const updatePingStatus = async () => {
     console.error('Error:', error);
   }
 };
-
 setInterval(updatePingStatus, 1000);
 
 function clearconsole() {
   document.getElementById("sessionData").value = "";
 }
+
+document.addEventListener('contextmenu', 
+     event => event.preventDefault()
+);
